@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Would you like to add tip on the order?(optional)</h2>
+
+<input type="text" [(ngModel)]="firstNumber" (click)="input()"> %
+<div class="col-md-4 text-left">
+    <button type="button" class="add" (click)="addNumber()" [disabled]="addTip">Add Tip</button>
+</div>
+
+<h1 mat-dialog-title *ngIf="subTotal">Total {{data.total}}</h1>
+
+<div class="col-md-4 text-left">
+    <h1 mat-dialog-title *ngIf="final">Total {{result}}</h1>
+    <button type="button" class="add" (click)="payment()">Pay</button>
+</div>
